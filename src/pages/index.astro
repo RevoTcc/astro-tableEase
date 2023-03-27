@@ -1,12 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Card from '../components/Card.astro'
+import Container from '../layouts/Container.astro';
 ---
 
 <Layout title='Welcome to Astro.'>
-  <div
+  <Container
     id='index'
-    class='h-screen pt-20 border-b-white border-b-2 sm:flex w-11/12 items-center m-auto'
   >
     <img
       src='/images/people.svg'
@@ -23,23 +23,20 @@ import Card from '../components/Card.astro'
         tornar sua experiência em restaurantes ainda mais agradável e prática!
       </p>
     </div>
-  </div>
-  <div
+  </Container>
+  <Container
     id='project'
-    class='h-screen pt-20 border-b-white border-b-2 sm:flex w-11/12 items-center m-auto'
   >
     <h1>Projeto</h1>
-  </div>
-  <div
+  </Container>
+  <Container
     id='faq'
-    class='h-screen pt-20 border-b-white border-b-2 sm:flex w-11/12 items-center m-auto'
   >
     <h1>Faq</h1>
-  </div>
-  <div
+  </Container>
+  <Container
     id='blog'
-    class='h-screen pt-20 border-b-white border-b-2 sm:flex w-11/12 items-center m-auto'
   >
     <h1>Blog</h1>
-  </div>
+  </Container>
 </Layout>

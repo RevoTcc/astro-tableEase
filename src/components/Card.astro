@@ -1,12 +1,6 @@
 ---
-const { title, body } = Astro.props;
 ---
 
 <div class="link-card bg-black100 rounded-2xl p-4 m-2">
-		<h2>
-			{title}
-		</h2>
-		<p>
-			{body}
-		</p>
+		<slot />
 </div>

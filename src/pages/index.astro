@@ -15,7 +15,7 @@ import Container from '../layouts/Container.astro'
         />
         <div class='sm:w-1/2 text-center'>
           <h1>Tenha controle do valor de seus pedidos com o Table Ease</h1>
-          <p class='text-center'>
+          <p>
             Com o Table Ease, dividir o valor da conta com seus amigos nunca foi
             tão fácil e rápido! Agora, você e seus amigos podem ter total
             controle dos pedidos e valores, sem precisar se preocupar com contas
@@ -26,7 +26,38 @@ import Container from '../layouts/Container.astro'
         </div>
       </div>
     </Container>
-    <Container id='project'>
+    <Container id='spaces'>
+      <div class='flex flex-col lg:flex-row items-center'>
+        <div class='lg:w-1/2 text-center'>
+          <h1>
+            Crie um novo Space e aproveite tudo o que o table ease tem a
+            oferecer
+          </h1>
+          <p>
+            O Space é a onde você faz a mágica acontecer. Com ele, você tem o
+            controle total sobre seus pedidos, seus valores e a melhor coisa, é
+            muito mais simples na hora de fechar a conta. <br />
+            <br />
+            Você pode usar o Space da forma que preferir melhor: criar um toda vez
+            que sair com seus amigos, ou possuir um fixo para todos os seus rolês.
+            <br />
+            <br />
+
+            ps. você sabia que é possível usar o Table Ease até mesmo para
+            mercado?
+          </p>
+          <a href='#project'>
+            <button>Conheça todas as possibilidades</button>
+          </a>
+        </div>
+        <img
+          src='/images/spaces.svg'
+          alt=''
+          class='sm:w-1/2 mx-20 m-auto -order-1 lg:order-last'
+        />
+      </div>
+    </Container>
+    <Container id='functions'>
       <h2 class='mb-4'>Veja como o projeto funciona &#8594;</h2>
       <div class='w-full sm:w-3/4 snap-mandatory snap-x overflow-x-scroll'>
         <div class='inline-flex flex-nowrap'>
@@ -44,10 +75,9 @@ import Container from '../layouts/Container.astro'
                 <div class='w-48 h-48 flex justify-center'>
                   <img src='/images/items/add item.svg' alt='' />
                 </div>
-                <h1 class='text-center pt-4'>Adicione um novo item</h1>
+                <h1 class='text-center pt-4'>Adicionar um novo item...</h1>
                 <p class='text-center'>
-                  Criar um novo item é muito simples, e não leva nem 30
-                  segundos.
+                  É tão simples que não leva nem 30 segundos!
                 </p>
               </div>
             </Card>
@@ -67,7 +97,8 @@ import Container from '../layouts/Container.astro'
                 </div>
                 <h1 class='text-center pt-4'>Seus itens ficam salvos assim</h1>
                 <p class='text-center'>
-                  Bem mais fácil na hora de fechar a conta, não?
+                  Bem mais fácil na hora de fechar a conta, não? E você ainda
+                  tem a opção de editar ou deletar ele.
                 </p>
               </div>
             </Card>
@@ -85,9 +116,10 @@ import Container from '../layouts/Container.astro'
                 <div class='w-48 h-48 flex justify-center'>
                   <img src='/images/items/profile card.svg' alt='' />
                 </div>
-                <h1 class='text-center pt-4'>Visualize seu perfil</h1>
+                <h1 class='text-center pt-4'>Visualize seu perfil...</h1>
                 <p class='text-center'>
-                  Veja quantos itens você já pediu e a soma de todos eles.
+                  E de todas as outras pessoas na mesa, assim você consegue
+                  controlar quanto já foi gasto.
                 </p>
               </div>
             </Card>
@@ -106,11 +138,11 @@ import Container from '../layouts/Container.astro'
                   <img src='/images/items/math.svg' alt='' />
                 </div>
                 <h1 class='text-center pt-4'>
-                  Calcular ficou ainda mais fácil!
+                  E calcular ficou ainda mais fácil!
                 </h1>
                 <p class='text-center'>
-                  É só arrastar pro lado e o valor vai ser atualizado de acordo
-                  com a quantidade de pessoas, prático né?
+                  Criamos uma página inteira para você selecionar os itens
+                  desejados e calcular o valor baseado na quantidade de pessoas.
                 </p>
               </div>
             </Card>

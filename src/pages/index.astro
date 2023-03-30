@@ -27,12 +27,18 @@ import Container from '../layouts/Container.astro'
       </div>
     </Container>
     <Container id='project'>
-      <h2>Veja como o projeto funciona &#8594;</h2>
+      <h2 class='mb-4'>Veja como o projeto funciona &#8594;</h2>
       <div class='w-full sm:w-3/4 snap-mandatory snap-x overflow-x-scroll'>
         <div class='inline-flex flex-nowrap'>
           <div class='w-64'></div>
-          <div class='relative w-72 sm:w-96 h-fit flex-shrink-0 mx-4 snap-center'>
-            <div class="absolute bg-te_blue rounded-full h-10 w-10 p-2 top-5 left-5 text-center text-white font-black">1</div>
+          <div
+            class='relative w-72 sm:w-96 h-fit flex-shrink-0 mx-4 snap-center'
+          >
+            <div
+              class='absolute bg-te_blue rounded-full h-10 w-10 p-2 top-5 left-5 text-center text-white font-black'
+            >
+              1
+            </div>
             <Card>
               <div class='w-64 flex flex-col items-center justify-center h-96'>
                 <div class='w-48 h-48 flex justify-center'>
@@ -46,8 +52,14 @@ import Container from '../layouts/Container.astro'
               </div>
             </Card>
           </div>
-          <div class='relative w-72 sm:w-96 h-fit flex-shrink-0 mx-4 snap-center'>
-            <div class="absolute bg-te_blue rounded-full h-10 w-10 p-2 top-5 left-5 text-center text-white font-black">2</div>
+          <div
+            class='relative w-72 sm:w-96 h-fit flex-shrink-0 mx-4 snap-center'
+          >
+            <div
+              class='absolute bg-te_blue rounded-full h-10 w-10 p-2 top-5 left-5 text-center text-white font-black'
+            >
+              2
+            </div>
             <Card>
               <div class='w-64 flex flex-col items-center justify-center h-96'>
                 <div class='w-48 h-48 flex justify-center'>
@@ -60,11 +72,17 @@ import Container from '../layouts/Container.astro'
               </div>
             </Card>
           </div>
-          <div class='relative w-72 sm:w-96 h-fit flex-shrink-0 mx-4 snap-center'>
-            <div class="absolute bg-te_blue rounded-full h-10 w-10 p-2 top-5 left-5 text-center text-white font-black">3</div>
+          <div
+            class='relative w-72 sm:w-96 h-fit flex-shrink-0 mx-4 snap-center'
+          >
+            <div
+              class='absolute bg-te_blue rounded-full h-10 w-10 p-2 top-5 left-5 text-center text-white font-black'
+            >
+              3
+            </div>
             <Card>
               <div class='w-64 flex flex-col items-center justify-center h-96'>
-                <div class="w-48 h-48 flex justify-center">
+                <div class='w-48 h-48 flex justify-center'>
                   <img src='/images/items/profile card.svg' alt='' />
                 </div>
                 <h1 class='text-center pt-4'>Visualize seu perfil</h1>
@@ -74,11 +92,17 @@ import Container from '../layouts/Container.astro'
               </div>
             </Card>
           </div>
-          <div class='relative w-72 sm:w-96 h-fit flex-shrink-0 mx-4 snap-center'>
-            <div class="absolute bg-te_blue rounded-full h-10 w-10 p-2 top-5 left-5 text-center text-white font-black">4</div>
+          <div
+            class='relative w-72 sm:w-96 h-fit flex-shrink-0 mx-4 snap-center'
+          >
+            <div
+              class='absolute bg-te_blue rounded-full h-10 w-10 p-2 top-5 left-5 text-center text-white font-black'
+            >
+              4
+            </div>
             <Card>
               <div class='w-64 flex flex-col items-center justify-center h-96'>
-                <div class="w-48 h-48 flex justify-center">
+                <div class='w-48 h-48 flex justify-center'>
                   <img src='/images/items/math.svg' alt='' />
                 </div>
                 <h1 class='text-center pt-4'>
@@ -96,7 +120,91 @@ import Container from '../layouts/Container.astro'
       </div>
     </Container>
     <Container id='faq'>
-      <h2>Faq</h2>
+      <h2 class='mb-4'>Faq</h2>
+      <div class='grid grid-cols-1 sm:grid-cols-2'>
+        <Card>
+          <div
+            class='w-full sm:w-11/12 flex flex-col items-center justify-center'
+          >
+            <h1 class='text-center'>O que é o Table Ease?</h1>
+            <p class='text-center'>
+              O Table Ease é um aplicativo para gerenciar o valor da conta e os
+              pedidos feitos em estabelecimentos voltados a restaurantes.
+            </p>
+          </div>
+        </Card>
+        <Card>
+          <div
+            class='w-full sm:w-11/12 flex flex-col items-center justify-center'
+          >
+            <h1 class='text-center'>
+              O Table Ease está disponível em quais sistemas operacionais?
+            </h1>
+            <p class='text-center'>
+              O aplicativo está disponível para download em dispositivos Android
+              e iOS.
+            </p>
+          </div>
+        </Card>
+        <Card>
+          <div
+            class='w-full sm:w-11/12 flex flex-col items-center justify-center'
+          >
+            <h1 class='text-center'>
+              Como funciona a divisão de valores entre os membros de um grupo no
+              aplicativo?
+            </h1>
+            <p class='text-center'>
+              A divisão de valores entre os membros de um grupo é feita de forma
+              automática pelo aplicativo, levando em consideração a quantidade
+              de itens pedidos selecionados e os membros que vão dividir.
+            </p>
+          </div>
+        </Card>
+        <Card>
+          <div
+            class='w-full sm:w-11/12 flex flex-col items-center justify-center'
+          >
+            <h1 class='text-center'>
+              O Table Ease permite fazer pagamentos diretamente pelo aplicativo?
+            </h1>
+            <p class='text-center'>
+              Não, o Table Ease é um aplicativo destinado exclusivamente para o
+              gerenciamento de pedidos e divisão de contas em restaurantes. É
+              importante ressaltar que o pagamento deve ser feito diretamente ao
+              estabelecimento em questão, seguindo as formas de pagamento
+              disponíveis no local.
+            </p>
+          </div>
+        </Card>
+        <Card>
+          <div
+            class='w-full sm:w-11/12 flex flex-col items-center justify-center'
+          >
+            <h1 class='text-center'>
+              É necessário conexão com a internet para usar o Table Ease?
+            </h1>
+            <p class='text-center'>
+              Sim, é necessário estar conectado à internet para usar o Table
+              Ease e atualizar as informações em tempo real.
+            </p>
+          </div>
+        </Card>
+        <Card>
+          <div
+            class='w-full sm:w-11/12 flex flex-col items-center justify-center'
+          >
+            <h1 class='text-center'>
+              O que acontece se eu perder o acesso do meu Space?
+            </h1>
+            <p class='text-center'>
+              Se você tiver o código salvo do seu space, você não precisa se
+              preocupar porque os dados ficam salvos em nuvem, então você não
+              vai perder nadinha!
+            </p>
+          </div>
+        </Card>
+      </div>
     </Container>
     <!-- <Container
         id='news'

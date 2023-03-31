@@ -1,0 +1,54 @@
+---
+import RevoIcon from './icon/RevoIcon.astro'
+const links = [
+    {
+      label: 'Início',
+      url: '#index',
+    },
+    {
+      label: 'Spaces',
+      url: '#spaces',
+    },
+    {
+      label: 'Funções',
+      url: '#functions',
+    },
+    {
+      label: 'FAQ',
+      url: '#faq',
+    },
+    // {
+    //   label: 'Not[icias',
+    //   url: '#news',
+    // },
+  ]
+---
+
+<nav class='bg-black100 fixed top-0 left-0 w-full z-50'>
+  <div class='flex mx-auto px-4 sm:px-8 justify-center'>
+    <div class='flex justify-between h-16 w-10/12'>
+      <div class='flex-shrink-0 flex items-center'>
+        <a
+          href='/'
+          class='text-white hover:text-te_yellow transition-all font-Nunito font-black text-xl'>
+          Table Ease
+        </a>
+      </div>
+      <div class='hidden sm:flex flex-1 justify-center'>
+        <div class='ml-10 flex items-center space-x-4'>
+          {links.map((item) => (
+            <a
+              href={item.url}
+              class='text-white hover:text-te_yellow active:text-te_yellow transition-all'>
+              {item.label}
+            </a>
+          ))}
+        </div>
+        <div></div>
+      </div>
+      <div class='flex justify-center items-center'>
+        <a href="http://dev-revo.netlify.app" target="_blank" rel="noopener noreferrer"><RevoIcon /></a>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,81 +1,255 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from '../layouts/Layout.astro'
+import Card from '../components/Card.astro'
+import Container from '../layouts/Container.astro'
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+<Layout title='Table Ease'>
+  <div class='flex flex-col justify-center items-center'>
+    <Container id='index'>
+      <div class='sm:flex items-center'>
+        <img
+          src='/images/people.svg'
+          alt='Two girls having a conversation and eating'
+          class='sm:w-1/2 m-auto'
+        />
+        <div class='sm:w-1/2 text-center'>
+          <h1>Tenha controle do valor de seus pedidos com o Table Ease</h1>
+          <p>
+            Com o Table Ease, dividir o valor da conta com seus amigos nunca foi
+            tão fácil e rápido! Agora, você e seus amigos podem ter total
+            controle dos pedidos e valores, sem precisar se preocupar com contas
+            separadas e divisões complicadas. <br />
+            <br />
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+            Experimente agora e veja como o Table Ease pode tornar sua
+            experiência em restaurantes ainda mais agradável e prática!
+          </p>
+
+          <a href='#spaces'>
+            <button> Veja mais</button>
+          </a>
+        </div>
+      </div>
+    </Container>
+    <Container id='spaces'>
+      <div class='flex flex-col lg:flex-row items-center'>
+        <div class='lg:w-1/2 text-center'>
+          <h1>
+            Crie um novo Space e aproveite tudo o que o table ease tem a
+            oferecer
+          </h1>
+          <p>
+            O Space é a onde você faz a mágica acontecer. Com ele, você tem o
+            controle total sobre seus pedidos, seus valores e a melhor coisa, é
+            muito mais simples na hora de fechar a conta. <br />
+            <br />
+            Você pode usar o Space da forma que preferir melhor: criar um toda vez
+            que sair com seus amigos, ou possuir um fixo para todos os seus rolês.
+            <br />
+            <br />
+
+            ps. você sabia que é possível usar o Table Ease até mesmo para
+            mercado?
+          </p>
+          <a href='#functions'>
+            <button>Conheça todas as possibilidades</button>
+          </a>
+        </div>
+        <img
+          src='/images/spaces.svg'
+          alt=''
+          class='sm:w-1/2 mx-20 m-auto -order-1 lg:order-last'
+        />
+      </div>
+    </Container>
+    <Container id='functions'>
+      <h2 class='mb-4'>Veja como o projeto funciona &#8594;</h2>
+      <div class='w-full sm:w-3/4 snap-mandatory snap-x overflow-x-scroll'>
+        <div class='inline-flex flex-nowrap'>
+          <div class='w-64'></div>
+          <div
+            class='relative w-72 sm:w-96 h-fit flex-shrink-0 mx-4 snap-center'
+          >
+            <div
+              class='absolute bg-te_blue rounded-full h-10 w-10 p-2 top-5 left-5 text-center text-white font-black'
+            >
+              1
+            </div>
+            <Card>
+              <div class='w-64 flex flex-col items-center justify-center h-96'>
+                <div class='w-48 h-48 flex justify-center'>
+                  <img src='/images/items/add item.svg' alt='' />
+                </div>
+                <h1 class='text-center pt-4'>Adicionar um novo item...</h1>
+                <p class='text-center'>
+                  É tão simples que não leva nem 30 segundos!
+                </p>
+              </div>
+            </Card>
+          </div>
+          <div
+            class='relative w-72 sm:w-96 h-fit flex-shrink-0 mx-4 snap-center'
+          >
+            <div
+              class='absolute bg-te_blue rounded-full h-10 w-10 p-2 top-5 left-5 text-center text-white font-black'
+            >
+              2
+            </div>
+            <Card>
+              <div class='w-64 flex flex-col items-center justify-center h-96'>
+                <div class='w-48 h-48 flex justify-center'>
+                  <img src='/images/items/item card.svg' alt='' />
+                </div>
+                <h1 class='text-center pt-4'>Seus itens ficam salvos assim</h1>
+                <p class='text-center'>
+                  Bem mais fácil na hora de fechar a conta, não? E você ainda
+                  tem a opção de editar ou deletar ele.
+                </p>
+              </div>
+            </Card>
+          </div>
+          <div
+            class='relative w-72 sm:w-96 h-fit flex-shrink-0 mx-4 snap-center'
+          >
+            <div
+              class='absolute bg-te_blue rounded-full h-10 w-10 p-2 top-5 left-5 text-center text-white font-black'
+            >
+              3
+            </div>
+            <Card>
+              <div class='w-64 flex flex-col items-center justify-center h-96'>
+                <div class='w-48 h-48 flex justify-center'>
+                  <img src='/images/items/profile card.svg' alt='' />
+                </div>
+                <h1 class='text-center pt-4'>Visualize seu perfil...</h1>
+                <p class='text-center'>
+                  E de todas as outras pessoas na mesa, assim você consegue
+                  controlar quanto já foi gasto.
+                </p>
+              </div>
+            </Card>
+          </div>
+          <div
+            class='relative w-72 sm:w-96 h-fit flex-shrink-0 mx-4 snap-center'
+          >
+            <div
+              class='absolute bg-te_blue rounded-full h-10 w-10 p-2 top-5 left-5 text-center text-white font-black'
+            >
+              4
+            </div>
+            <Card>
+              <div class='w-64 flex flex-col items-center justify-center h-96'>
+                <div class='w-48 h-48 flex justify-center'>
+                  <img src='/images/items/math.svg' alt='' />
+                </div>
+                <h1 class='text-center pt-4'>
+                  E calcular ficou ainda mais fácil!
+                </h1>
+                <p class='text-center'>
+                  Criamos uma página inteira para você selecionar os itens
+                  desejados e calcular o valor baseado na quantidade de pessoas.
+                </p>
+              </div>
+            </Card>
+          </div>
+          <div class='w-64'></div>
+        </div>
+      </div>
+    </Container>
+    <Container id='faq'>
+      <h2 class='mb-4'>Faq</h2>
+      <div
+        class='grid grid-cols-1 sm:grid-cols-2 overflow-x-auto sm:h-[700px] xl:h-full'
+      >
+        <Card>
+          <div
+            class='w-full sm:w-11/12 flex flex-col items-center justify-center'
+          >
+            <h1 class='text-center'>O que é o Table Ease?</h1>
+            <p class='text-center'>
+              O Table Ease é um aplicativo para gerenciar o valor da conta e os
+              pedidos feitos em estabelecimentos voltados a restaurantes.
+            </p>
+          </div>
+        </Card>
+        <Card>
+          <div
+            class='w-full sm:w-11/12 flex flex-col items-center justify-center'
+          >
+            <h1 class='text-center'>
+              O Table Ease está disponível em quais sistemas operacionais?
+            </h1>
+            <p class='text-center'>
+              O aplicativo está disponível para download em dispositivos Android
+              e iOS.
+            </p>
+          </div>
+        </Card>
+        <Card>
+          <div
+            class='w-full sm:w-11/12 flex flex-col items-center justify-center'
+          >
+            <h1 class='text-center'>
+              Como funciona a divisão de valores entre os membros de um grupo no
+              aplicativo?
+            </h1>
+            <p class='text-center'>
+              A divisão de valores entre os membros de um grupo é feita de forma
+              automática pelo aplicativo, levando em consideração a quantidade
+              de itens pedidos selecionados e os membros que vão dividir.
+            </p>
+          </div>
+        </Card>
+        <Card>
+          <div
+            class='w-full sm:w-11/12 flex flex-col items-center justify-center'
+          >
+            <h1 class='text-center'>
+              O Table Ease permite fazer pagamentos diretamente pelo aplicativo?
+            </h1>
+            <p class='text-center'>
+              Não, o Table Ease é um aplicativo destinado exclusivamente para o
+              gerenciamento de pedidos e divisão de contas em restaurantes. É
+              importante ressaltar que o pagamento deve ser feito diretamente ao
+              estabelecimento em questão, seguindo as formas de pagamento
+              disponíveis no local.
+            </p>
+          </div>
+        </Card>
+        <Card>
+          <div
+            class='w-full sm:w-11/12 flex flex-col items-center justify-center'
+          >
+            <h1 class='text-center'>
+              É necessário conexão com a internet para usar o Table Ease?
+            </h1>
+            <p class='text-center'>
+              Sim, é necessário estar conectado à internet para usar o Table
+              Ease e atualizar as informações em tempo real.
+            </p>
+          </div>
+        </Card>
+        <Card>
+          <div
+            class='w-full sm:w-11/12 flex flex-col items-center justify-center'
+          >
+            <h1 class='text-center'>
+              O que acontece se eu perder o acesso do meu Space?
+            </h1>
+            <p class='text-center'>
+              Se você tiver o código salvo do seu space, você não precisa se
+              preocupar porque os dados ficam salvos em nuvem, então você não
+              vai perder nadinha!
+            </p>
+          </div>
+        </Card>
+      </div>
+    </Container>
+    <!-- <Container
+        id='news'
+      >
+        <h1>Noticias</h1>
+      </Container> -->
+  </div>
+</Layout>

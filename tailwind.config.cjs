@@ -16,6 +16,21 @@ module.exports = {
         te_blueAccent: '#6EC4E8',
         te_gray: '#CFCFCF',
       },
+      fontFamily: {
+        Nunito: [
+          'NunitoSans-Black',
+          'Nunito',
+          'sans-serif'
+        ],
+        Montserrat: [
+          'Montserrat-Regular',
+          'sans-serif'
+        ],
+        Barlow: [
+          'Barlow-Regular',
+          'serif'
+        ]
+      },
     },
   },
   plugins: [],

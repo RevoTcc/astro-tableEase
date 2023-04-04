@@ -13,7 +13,7 @@ const { title } = Astro.props
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class='sm:overflow-hidden'>
+  <body>
     <Header />
     <slot />
   </body>
@@ -74,7 +74,7 @@ const { title } = Astro.props
   }
   @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat-Bold.ttf');
+    src: url('/fonts/Montserrat-Regular.ttf');
   }
   @font-face {
     font-family: 'Barlow';
